@@ -1,0 +1,11 @@
+<p>
+  game-list works!
+</p>
+<ul>Backlog
+  <li  *ngFor="let game of games | async">
+    {{game.title}}
+    {{game.played}}
+  </li>
+</ul>
+
+<button (click)="AddGame()">Add a book!</button>
