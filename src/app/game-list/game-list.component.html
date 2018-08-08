@@ -8,4 +8,6 @@
   </li>
 </ul>
 
-<button (click)="AddGame()">Add a book!</button>
+<p>Title:<input type="text" #title ></p>
+<p>Played:<input type ="text" #played></p>
+<button (click)="addGame(title.value, played.value)">Add a book!</button>
